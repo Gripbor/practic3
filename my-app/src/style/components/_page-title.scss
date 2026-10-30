@@ -5,47 +5,51 @@
   font-style: normal;
   font-display: swap;
 }
+
 a {
   text-decoration: none;
   color: black;
 }
-.main-title {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 2%;
-
-  &--left {
+.main {
+  font-family: "TTLakes", Arial;
+  &-title {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 2vw;
-    height: 80px;
-    &__ractangle {
-      background-color: aqua;
-      width: 4px;
-      height: 80%;
-      border-radius: 0 50px 50px 0;
-    }
-  }
-  &--right {
-    display: none;
-  }
-  @media (min-width: 1280px) {
-    &--right {
+    justify-content: space-between;
+    margin-top: 2%;
+
+    &--left {
       display: flex;
+      flex-direction: row;
       align-items: center;
       gap: 2vw;
-      margin-right: 2vw;
-      &__aplication {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
+      height: 80px;
+      &__ractangle {
+        background-color: aqua;
+        width: 4px;
+        height: 80%;
+        border-radius: 0 50px 50px 0;
       }
-      &__status {
+    }
+    &--right {
+      display: none;
+    }
+    @media (min-width: 1440px) {
+      &--right {
         display: flex;
-        flex-direction: row;
-        gap: 1rem;
+        align-items: center;
+        gap: 2vw;
+        margin-right: 2vw;
+        &__aplication {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+        }
+        &__status {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+        }
       }
     }
   }

@@ -1,0 +1,23 @@
+.main {
+  &-nav {
+    display: flex;
+    flex-direction: row;
+    height: 45px;
+    text-align: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin: 0 2vw 0;
+    overflow: auto;
+    
+    &--section {
+      height: 100%;
+      width: 400px;
+      color: rgb(119, 119, 119);
+      white-space: nowrap;
+      margin-right: 20px;
+    }
+  }
+  &-nav ::-webkit-scrollbar {
+  display: none;
+}
+}
