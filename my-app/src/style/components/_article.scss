@@ -2,21 +2,47 @@
   margin: 0 2vw 0;
   &-heading {
     display: none;
-    color: rgb(119, 119, 119);  
+    color: rgb(119, 119, 119);
   }
   &-description {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5vw;
+
     &__text {
+      color: rgb(119, 119, 119);
       &-morebutton {
+        display: flex;
+        flex-direction: row;
+        gap: 1vw;
         &--img {
+          width: 2vw;
+          min-width: 10px;
         }
       }
+    }
+    &--img {
+      width: 1900px;
     }
   }
 }
 @media (min-width: 1440px) {
   .feedback {
     &-heading {
+      margin-left: 48px;
       display: block;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .feedback {
+    &-description {
+      flex-direction: column;
+      &--img {
+        margin: 0;
+        width: 100vw;
+      }
     }
   }
 }
