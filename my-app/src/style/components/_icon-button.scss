@@ -2,22 +2,29 @@
   &-nav {
     display: flex;
     flex-direction: row;
-    height: 45px;
+    height: 100px;
     text-align: center;
     align-items: center;
     flex-wrap: nowrap;
     margin: 0 2vw 0;
     overflow: auto;
-    
+
     &--section {
       height: 100%;
-      width: 400px;
+      min-width: 300px;
       color: rgb(119, 119, 119);
       white-space: nowrap;
-      margin-right: 20px;
+    }
+    &--section :hover {
+      border: 2px solid cyan;
+      border-radius: 5px;
+    }
+    &--section :active {
+      border: 2px solid cyan;
+      border-radius: 5px;
     }
   }
-  &-nav ::-webkit-scrollbar {
-  display: none;
-}
+  &-nav::-webkit-scrollbar {
+    display: none;
+  }
 }

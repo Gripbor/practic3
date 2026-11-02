@@ -1,0 +1,22 @@
+.feedback {
+  margin: 0 2vw 0;
+  &-heading {
+    display: none;
+    color: rgb(119, 119, 119);  
+  }
+  &-description {
+    &__text {
+      &-morebutton {
+        &--img {
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .feedback {
+    &-heading {
+      display: block;
+    }
+  }
+}
