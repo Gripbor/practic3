@@ -1,11 +1,13 @@
+@import "../variables", "../mixins";
+
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
-  background-color: #ffffff;
-  border-bottom: 2px solid cyan;
+  height: 88px;
+  background-color: $white-color;
+  border-bottom: 1px solid $accent-color;
   margin: 0 2vw 0;
   &-logo {
     display: flex;
@@ -23,8 +25,8 @@
     gap: 20px;
     &__separator {
       height: 40px;
-      width: 3px;
-      background-color: lightgrey;
+      width: 1px;
+      background-color: $light-grey;
     }
     &__contacts {
       display: none;
@@ -42,7 +44,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .header {
     display: flex;
     flex-direction: row;
@@ -58,33 +60,29 @@
       }
       &__img {
       }
-    }
 
-    &-nav {
-      display: flex;
-      flex-direction: row;
-      gap: 20px;
-      &__separator {
-        height: 40px;
-        width: 2px;
-        background-color: lightgrey;
-      }
-      &__contacts {
-        display: block;
-      }
-      &__masage {
-        display: block;
-      }
-      &__user {
-        display: block;
-      }
-      &__aplication {
-      }
-      &__status {
+      &-nav {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        &__separator {
+          height: 40px;
+          width: 1px;
+          background-color: lightgrey;
+        }
+        &__contacts {
+          display: block;
+        }
+        &__masage {
+          display: block;
+        }
+        &__user {
+          display: block;
+        }
       }
     }
   }
-  @media (min-width: 1440px) {
+  @media (min-width: $desktop-width) {
     .header {
       display: none;
     }

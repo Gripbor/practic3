@@ -1,8 +1,9 @@
+@import "../variables", "../mixins";
 .feedback {
   margin: 0 2vw 0;
   &-heading {
     display: none;
-    color: rgb(119, 119, 119);
+    color: $text-color__second;
   }
   &-description {
     display: flex;
@@ -10,14 +11,13 @@
     column-gap: 5vw;
 
     &__text {
-      color: rgb(119, 119, 119);
+      color: $text-color__main;
       &-morebutton {
         display: flex;
         flex-direction: row;
         gap: 1vw;
         &--img {
-          width: 2vw;
-          min-width: 10px;
+          width: 15px;
         }
       }
     }

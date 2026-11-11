@@ -1,0 +1,15 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin svgbutton-hover {
+  fill: aqua;
+}
+
+/* проверить переменные и цвета по макету */
+
+/* верстка pixel perfect */
+
+/* почитать про base */

@@ -1,3 +1,4 @@
+@import "../variables", "../mixins";
 .main {
   &-nav {
     display: flex;
@@ -10,18 +11,23 @@
     overflow: auto;
 
     &--section {
-      height: 100%;
       min-width: 350px;
-      color: rgb(119, 119, 119);
+      color: $text-color__second;
       white-space: nowrap;
     }
     &--section :hover {
-      border: 2px solid cyan;
-      border-radius: 5px;
+      @include flex-center;
+      background-color: $white-color;
+      height: 40px;
+      border: 3px solid $hover-color;
+      border-radius: 6px;
     }
-    &--section :active {
-      border: 2px solid cyan;
-      border-radius: 5px;
+    &--section :visited {
+      @include flex-center;
+      background-color: $white-color;
+      height: 40px;
+      border: 3px solid $hover-color;
+      border-radius: 6px;
     }
   }
   &-nav::-webkit-scrollbar {
