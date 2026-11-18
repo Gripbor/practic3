@@ -9,12 +9,12 @@
   background-color: $white-color;
   border-bottom: 1px solid $accent-color;
   margin: 0 2vw 0;
+
   &-logo {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    &__desc {
-    }
+    
     &__img {
     }
   }
@@ -56,8 +56,7 @@
       display: flex;
       flex-direction: row;
       gap: 20px;
-      &__desc {
-      }
+
       &__img {
       }
 

@@ -1,3 +1,68 @@
+@import "./variables", "./mixins";
+@font-face {
+  font-family: "TTLakes";
+  src: url(../fonts/TTLakes-Regular.ttf);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 .main {
-  background-color: #f8f8f8;
+  font-family: "TTLakes", Arial;
+  background-color: $ground-color;
+}
+.menu {
+  position: fixed;
+  background-color: $white-color;
+  left: -320px;
+  top: 0;
+  width: 320px;
+  height: 100vh;
+  transition: 0.5s;
+  &__header {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    align-items: center;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    gap: 8px;
+    justify-content: space-between;
+    height: 88px;
+    &-left {
+    }
+  }
+  &__list {
+    color: $text-color__main;
+    list-style-type: none;
+    padding: 0;
+    li {
+      display: flex;
+      flex-direction: row;
+      column-gap: 2vw;
+      margin-top: 16px;
+      @include flex-center;
+      justify-content: left;
+    }
+    &-element {
+      &__rectangle {
+        background-color: $accent-color;
+        width: 4px;
+        height: 32px;
+        border-radius: 0 50px 50px 0;
+      }
+      &__text {
+        font-family: "TTLakes", Arial;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.menu.open {
+  transform: translateX(100%);
+}
+@media (min-width: 980px) {
+  .menu {
+  }
 }

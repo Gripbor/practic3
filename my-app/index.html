@@ -7,44 +7,101 @@
     <title>my-app</title>
     <link rel="stylesheet" href="./src/style/main.scss" />
     <link rel="stylesheet" href="./src/style/normilize.css" />
-    <script src="src/js/main.js"></script>
+    <script defer src="./src/js/main.js"></script>
   </head>
   <body>
-    <header class="header">
-      <div class="header-logo">
-        <a href="" class="header-logo__desc"
-          ><img
-            src="src/assets/img/burger.svg"
-            alt="меню"
-        /></a>
-        <div class="header-nav__separator"></div>
-        <img src="src/assets/img/Logo.svg" alt="CPS" class="header-logo__img" />
+    <aside class="menu">
+      <div class="menu__header">
+        <div class="menu__header-left">
+          <button class="burger-btn" id="burger">
+            <a href=""><img src="src/assets/img/burger.svg" alt="меню" /></a>
+          </button>
+
+          <img
+            src="src/assets/img/Logo.svg"
+            alt="CPS"
+            class="header-logo__img"
+          />
+        </div>
+        <div class="menu__header-right">
+          <button class="btn-pink">
+            <a href=""><img src="src/assets/img/search.svg" alt="меню" /></a>
+          </button>
+        </div>
       </div>
-      <nav class="header-nav">
-        <a href="" class="header-nav__contacts"
-          ><img src="src/assets/img/call.svg" alt=""
-        /></a>
 
-        <a href="" class="header-nav__masage"
-          ><img src="src/assets/img/chat.svg" alt=""
-        /></a>
-
-        <a href="" class="header-nav__user"
-          ><img src="src/assets/img/profile.svg" alt=""
-        /></a>
-
-        <div class="header-nav__separator"></div>
-
-        <a href="" class="header-nav__aplication"
-          ><img src="src/assets/img/repair.svg" alt="Оставить заявку"
-        /></a>
-
-        <a href="" class="header-nav__status"
-          ><img src="src/assets/img/checkstatus.svg" alt="Статус ремонта"
-        /></a>
-      </nav>
-    </header>
+      <ul class="menu__list">
+        <li class="menu__list-element">
+          <div class="menu__list-element__rectangle"></div>
+          <div class="menu__list-element__text">Ремонт техники</div>
+        </li>
+        <li class="menu__nav-element">
+          <div class="menu__list-element__rectangle"></div>
+          <div class="menu__list-element__text">Услуги и сервисы</div>
+        </li>
+        <li class="menu__nav-element">
+          <div class="menu__list-element__rectangle"></div>
+          <div class="menu__list-element__text">Корпоративным клиентам</div>
+        </li>
+        <li class="menu__nav-element">
+          <div class="menu__list-element__rectangle"></div>
+          <div class="menu__list-element__text">Продавцам техники</div>
+        </li>
+        <li class="menu__nav-element">
+          <div class="menu__list-element__rectangle"></div>
+          <div class="menu__list-element__text">Партнерам</div>
+        </li>
+        <li class="menu__nav-element">
+          <div class="menu__list-element__rectangle"></div>
+          <div class="menu__list-element__text">Производителям</div>
+        </li>
+        <li class="menu__nav-element">
+          <div class="menu__list-element__rectangle"></div>
+          <div class="menu__list-element__text">Наши сервисные центры</div>
+        </li>
+        <li class="menu__nav-element">
+          <div class="menu__list-element__rectangle"></div>
+          <div class="menu__list-element__text">Контакты</div>
+        </li>
+      </ul>
+    </aside>
     <mian class="main">
+      <header class="header">
+        <div class="header-logo">
+          <button class="burger-btn" id="burger">
+            <a href=""><img src="src/assets/img/burger.svg" alt="меню" /></a>
+          </button>
+          <div class="header-nav__separator"></div>
+          <img
+            src="src/assets/img/Logo.svg"
+            alt="CPS"
+            class="header-logo__img"
+          />
+        </div>
+        <nav class="header-nav">
+          <a href="" class="header-nav__contacts"
+            ><img src="src/assets/img/call.svg" alt=""
+          /></a>
+
+          <a href="" class="header-nav__masage"
+            ><img src="src/assets/img/chat.svg" alt=""
+          /></a>
+
+          <a href="" class="header-nav__user"
+            ><img src="src/assets/img/profile.svg" alt=""
+          /></a>
+
+          <div class="header-nav__separator"></div>
+
+          <a href="" class="header-nav__aplication"
+            ><img src="src/assets/img/repair.svg" alt="Оставить заявку"
+          /></a>
+
+          <a href="" class="header-nav__status"
+            ><img src="src/assets/img/checkstatus.svg" alt="Статус ремонта"
+          /></a>
+        </nav>
+      </header>
       <div class="main-title">
         <div class="main-title--left">
           <div class="main-title--left__ractangle"></div>
@@ -52,23 +109,21 @@
         </div>
         <div class="main-title--right">
           <a href="" class="main-title--right__aplication"
-            ><h3>Оставить заявку</h3>
+            >Оставить заявку
             <img src="src/assets/img/repair.svg" alt="Оставить заявку"
           /></a>
           <a href="" class="main-title--right__status"
-            ><h3>Статус ремонта</h3>
+            >Статус ремонта
             <img src="src/assets/img/checkstatus.svg" alt="Статус ремонта"
           /></a>
         </div>
       </div>
       <nav class="main-nav">
-        <a href="" class="main-nav--section"><h3>Ремонтируем бренды</h3></a>
-        <a href="" class="main-nav--section"><h3>Дополнительные услуги</h3></a>
-        <a href="" class="main-nav--section"><h3>Цены на услуги</h3></a>
-        <a href="" class="main-nav--section"
-          ><h3>Адреса сервисных центров</h3></a
-        >
-        <a href="" class="main-nav--section"><h3>Спеиальные цены</h3></a>
+        <a href="" class="main-nav--section"><p>Ремонтируем бренды</p></a>
+        <a href="" class="main-nav--section"><p>Дополнительные услуги</p></a>
+        <a href="" class="main-nav--section"><p>Цены на услуги</p></a>
+        <a href="" class="main-nav--section"><p>Адреса сервисных центров</p></a>
+        <a href="" class="main-nav--section"><p>Спеиальные цены</p></a>
       </nav>
       <article class="feedback">
         <div class="feedback-heading"><h3>Отзывы</h3></div>

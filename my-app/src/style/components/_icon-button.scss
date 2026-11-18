@@ -9,6 +9,7 @@
     flex-wrap: nowrap;
     margin: 0 2vw 0;
     overflow: auto;
+    font-size: 16px;
 
     &--section {
       min-width: 350px;
@@ -34,3 +35,13 @@
     display: none;
   }
 }
+
+.btn-pink {
+  border: none;
+  background: none;
+}
+
+.burger-btn {
+      border: none;
+      background: none;
+    }
